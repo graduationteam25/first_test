@@ -11,17 +11,6 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 10),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
-            child: const Row(
-              children: [
-                Icon(Icons.person_2_outlined),
-                Spacer(),
-                Icon(Icons.list),
-              ],
-            ),
-          ),
           Image.asset(
             'assets/images/home.png',
             width: double.infinity,
@@ -40,7 +29,7 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     const Text(
                       'This app scans signatures and ensures their authenticity and safety',
@@ -55,6 +44,8 @@ class Home extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          backgroundColor: const Color(0xff006FFD),
                           minimumSize: const Size(800, 60),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),

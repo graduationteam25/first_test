@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'design.dart';
-import 'changepage.dart';
+// import 'changepage.dart';
 
 class Forgetpage extends StatefulWidget {
   const Forgetpage({super.key});
@@ -10,25 +10,12 @@ class Forgetpage extends StatefulWidget {
 }
 
 class _ForgetpageState extends State<Forgetpage> {
-  Widget? activeone;
-
-  @override
-  void initState() {
-    super.initState();
-    activeone = Design(swetichone);
-  }
-
-  void swetichone() {
-    setState(() {
-      activeone = const Changepage();
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Signup',
-      home: Scaffold(body: activeone),
+      home: Scaffold(body: Design()),
     );
   }
 }

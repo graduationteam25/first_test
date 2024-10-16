@@ -46,6 +46,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  font_awesome_flutter: ^10.7.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,6 +64,7 @@ flutter:
     - assets/images/home.png
     - assets/images/sign_up.jpeg
     - assets/images/sign_up_down.jpeg
+    - assets/images/forgot_password.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -76,10 +78,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: address
-      fonts:
-        - asset: assets/fonts/PontanoSans-SemiBold.ttf 
+  # fonts:
+  #   - family: address
+  #     fonts:
+  #       - asset: assets/fonts/PontanoSans-SemiBold.ttf 
+  #       - asset: assets/fonts/PontanoSans-Medium.ttf 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
